@@ -1,0 +1,16 @@
+CREATE TABLE store(id INTEGER Primary Key, Apparel text, Price INTEGER, Aisle INTEGER,quantity INTEGER, Material Text, Size TEXT);
+
+INSERT INTO store VALUES (1, "Sweater", 21, 7, 8, "Wool", "Med");
+INSERT INTO store VALUES (2, "Blouse", 15, 3, 10, "Silk", "Small");
+INSERT INTO store VALUES (3, "Hoodie", 23, 10, 5, "Cotton", "XXL");
+INSERT INTO store VALUES (4, "T-Shirt", 10, 10, 12,"Cotton", "Med");
+INSERT INTO store VALUES (5, "Tanks", 5, 2, 9, "Hemp", "Small");
+INSERT INTO store VALUES (6, "Scarf", 13, 1, 12, "Silk", "Large");
+INSERT INTO store VALUES (7, "Beanie", 10, 1, 10, "Cotton", "Large");
+INSERT INTO store VALUES (8, "Slacks", 32, 12, 3, "Cotton", "Large");
+INSERT INTO store VALUES (9, "Jeans", 25, 12, 10, "Denim", "Large");
+INSERT INTO store VALUES (10, "Jacket", 20, 7, 5, "Wool", "Small");
+
+SELECT * FROM store ORDER BY Price;
+
+SELECT AVG(Price) FROM store
